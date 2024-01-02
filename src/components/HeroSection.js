@@ -36,11 +36,11 @@ function HeroSection() {
     />
        </h1> 
                 <p className='text-[#ADB7BE] text-lg lg:text-xl '>
-                  I`m Looking for new experiences as a developper, and i want to  increase my skill to create more project and be usefull to the society
-               </p>
+                A software developer with a passion for learning and creating.
+                </p>
                <div>
                 <button className='px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-200 text-white'>Hire Me</button>
-                <button className='px-1 py-1 rounded-full w-full sm:w-fit mr-4  bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-200 text-white mt-3 '>
+                <button onClick={()=> window.location.replace('https://github.com/daeilgogo/CV-')} className='px-1 py-1 rounded-full w-full sm:w-fit mr-4  bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-200 text-white mt-3 '>
                     <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-6 py-2'>
                       Download CV
                     </span>

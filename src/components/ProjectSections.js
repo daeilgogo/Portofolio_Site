@@ -8,7 +8,7 @@ const Project_DATA=[
     {
         id:1,
         title:'React Portofolio Website',
-        decriptions:'Project 1 description',
+        decriptions:'This site describe my PortoFolio',
         image:'/images/Project/project1.png',
         tag:['All',"Web"],
         gitUrl:'/',
@@ -17,12 +17,22 @@ const Project_DATA=[
     {
         id:2,
         title:'Dabate Game with ChatGpt',
-        decriptions:'Project 1 description',
+        decriptions:`This Project is made for educational goal. It show how fun 
+        is to use Ai and learn more from it.`,
         image:'/images/Project/project2.png',
         tag:['All',"Web"],
         gitUrl:'https://github.com/daeilgogo/Challenge_AI',
         previewUrl:'https://debate-mate.vercel.app/'
     },
+    {
+      id:3,
+      title:'NMC Ecommerce project',
+      decriptions:``,
+      image:'/images/Project/ecom.png',
+      tag:['All',"Mobile"],
+      gitUrl:'https://github.com/daeilgogo/Ecomme_app-',
+      previewUrl:`/`
+  },
 ]
 
 

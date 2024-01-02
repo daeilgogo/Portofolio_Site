@@ -33,8 +33,8 @@ const TAB_DATA=[
         id:'certifications',
         content:(
             <ul className='list-disc pl-2 '>
-                <li>AWS Cloud Parctitioner</li>
-                <li> Google Professional Cloud Developer</li>
+                <li> Microsoft AI 900 Certification</li>
+                <li> Certificate of Attendance International Conference on Research in Adaptive and Convergent Systems (RACS 23)</li>
             </ul>
         ),
     },
@@ -53,7 +53,7 @@ function AboutSection() {
         })
     }
   return (
-    <section className='text-white '>
+    <section className='text-white ' id='#about'>
         <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 '>
                <Image src={'/images/about-me.jpg'} alt='' width={500} height={500} className='rounded-xl'/>
                <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
