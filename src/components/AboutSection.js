@@ -22,7 +22,6 @@ const TAB_DATA=[
         id:'education',
         content:(
             <ul className='list-disc pl-2 '>
-                <li>Fullstack Academy of code</li>
                 <li>Sunmoon University in South Korea</li>
            
             </ul>

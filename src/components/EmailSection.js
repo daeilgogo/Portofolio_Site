@@ -35,19 +35,16 @@ const EmailSection = () => {
 //     console.log('Message Sent')
 //     }
 // }
-
 const form = useRef();
 
 const sendEmail = (e) => {
   e.preventDefault();
 
-  emailjs.sendForm('service_scy61g5', 'template_f491es5', form.current, '6q_h_Vtswyci8-QMc')
+  emailjs.sendForm('service_6brdkvi', 'template_f491es5', form.current, '6q_h_Vtswyci8-QMc')
     .then((result) => {
-        console.log(result.text);
-        alert('message Sent!!')
-        window.location.reload('/')
+        alert(result.text);
     }, (error) => {
-        console.log(error.text);
+        alert(error.text);
     });
 };
 
@@ -60,11 +57,7 @@ const sendEmail = (e) => {
                 Let`s Connect 
             </h5>
             <p className='text-[#ABD7BE] mb-4 max-w-md'>
-                   Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore 
-                      magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                      exercitation ullamco laboris nisi ut aliquip ex ea 
-                      commodo consequat. 
+
             </p>
             <div className='socials  flex flex-row gap-2'>
                 <Link href='http://github.com'>
@@ -77,21 +70,19 @@ const sendEmail = (e) => {
             </div>
         </div>
         <div>
-            <from className='flex flex-col' onSubmit={sendEmail} ref={form} >
+            <form className='flex flex-col' ref={form} onSubmit={sendEmail}  >
                 <div className='mb-6'>
-                   <label htmlFor='email' className='text-white block mb-1 text-sm font-medium'>Your Name</label>
-                   <input  type='text'  
-                   name='user_name'
+                   <label  className='text-white block mb-1 text-sm font-medium'>Your Name</label>
+                   <input   type='text' name='user_name'
                    className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5'
-                    required placeholder='Jacob@google.com'/>
+                    required placeholder='enter your name'/>
 
                 </div>
                 <div className='mb-6'>
-                    <label htmlFor='email' className='text-white block mb-1 text-sm font-medium'>email</label>
-                    <input  type='email' 
-                    name='user_email'
+                    <label  className='text-white block mb-1 text-sm font-medium'>email</label>
+                    <input  type='email' name='user_email'
                     className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5'
-                    required placeholder='Just Saying hi'/>
+                    required placeholder='abcd@gmail.com'/>
                 </div>
                 <div className='mb-6'>
                     <label htmlFor='message' className='text-white block text-sm mb-2 font-medium  '>
@@ -103,16 +94,14 @@ const sendEmail = (e) => {
                     className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5'/>
 
                 </div>
-                <button
-                type='submit'
-                value='Send'
+              <button
+                    type="submit" value="Send"
                 className='bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 rounded-lg w-full  '
-                >
-                     Send Message
-                </button>
+                >Send Message</button>
+                  
                  
                          
-            </from>
+            </form>
         </div>
       
     </section>
