@@ -40,7 +40,7 @@ const form = useRef();
 const sendEmail = (e) => {
   e.preventDefault();
 
-  emailjs.sendForm('service_6brdkvi', 'template_f491es5', form.current, '6q_h_Vtswyci8-QMc')
+  emailjs.sendForm('service_6brdkvi', 'template_f491es5', form.current, 'MdRCTNILK8JZB2iah')
     .then((result) => {
         alert(result.text);
     }, (error) => {
